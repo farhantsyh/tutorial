@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pendataan Buku</title>
+  </head>
+  <body>
+    <h1 align="center">Pendataan Buku</h1>
+    <center>
+    <form action="proses.php"  method="post">
+    <table  width="452" border="0" align="center"  cellpadding="0" cellspacing="1">
+      <tr>
+            <td  width="113">Judul</td>
+            <td  width="11">:</td>
+            <td  width="237"><input name="judul" type="text" size="40" maxlength="50" placeholder="Judul Buku" required></td>
+        </tr>
+        <tr>
+            <td>ISBN</td>
+            <td>:</td>
+            <td><input  name="isbn" type="text" size="20" maxlength="30" placeholder="ISBN" required></td>
+        </tr>
+        <tr>
+            <td>Penulis</td>
+            <td>:</td>
+            <td><textarea name="penulis" placeholder="Daftar Penulis Buku" rows="8" cols="40" required></textarea></td>
+        </tr>
+        <tr>
+            <td>Penerbit</td>
+            <td>:</td>
+            <td><label><input  name="penerbit" type="text" size="20" maxlength="30" placeholder="Penerbit" required></label></td>
+        </tr>
+        <tr>
+          <td>Tahun Terbit</td>
+          <td>:</td>
+          <td><input type="tahunterbit" name="tahun_terbit" placeholder="yyyy" required></td>
+        </tr>
+        <tr>
+          <td>Jenis</td>
+          <td>:</td>
+          <td><input type="radio" name="fiksi" >Fiksi
+        <input type="radio" name="non-fiksi" >Non-Fiksi
+        </td>
+        </tr>
+        <tr>
+            <td>Kategori</td>
+            <td>:</td>
+            <td>
+              <select class="kategori" name="kategori" value="Kategori" required>
+                <option value="000">Karya Umum</option>
+                <option value="100">Filsafat</option>
+                <option value="200">Agama</option>
+                <option value="300">Ilmu Sosial</option>
+                <option value="400">Bahasa</option>
+                <option value="500">Ilmu Pengetahuan Alam</option>
+                <option value="600">Teknologi</option>
+                <option value="700">Kesenian,Hiburan, dan Olahraga</option>
+                <option value="800">Kesusastraan</option>
+                <option value="900">Geografi dan Sejarah Umum</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+          <td>Sumbangan</td>
+          <td>:</td>
+          <td>
+            <select>
+              <option value="Sumbangan">Sumbangan</option>
+              <option value="Pengadaan">Pengadaan</option
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tanggal Masuk</td>
+          <td>:</td>
+          <td><input type="date" name="entrydate" value="Tanggal Masuk" max="2022-12-31" min="2005-01-01" required></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="submit" name="submit" value="Simpan">
+              <input type="reset" name="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+    </center>
+  </body>
+</html>
